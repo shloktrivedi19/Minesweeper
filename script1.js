@@ -41,7 +41,7 @@ const showingBomb = () => {
         box.classList.remove("hide");
         setTimeout(() => {
             box.classList.add("hide");
-        }, 1000);
+        }, 400);
     })
 }
 showingBomb()
