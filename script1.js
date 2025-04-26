@@ -38,8 +38,14 @@ boxes.forEach((box) => {                           // Clicking Event
 
 const showingBomb = () => {
     innerBoxes.forEach((box) => {
+        boxes.forEach((box) => {
+            box.classList.add("disable");
+        })
         box.classList.remove("hide");
         setTimeout(() => {
+            boxes.forEach((box) => {
+                box.classList.remove("disable");
+            })
             box.classList.add("hide");
         }, 400);
     })
